@@ -1,0 +1,27 @@
+version: 2
+
+models:
+  - name: dim_coins
+    description: "Static information about cryptocurrencies"
+    columns:
+      - name: coin_id
+        description: "Primary key (Symbol) of the coin"
+        tests:
+          - unique
+          - not_null
+
+  - name: fact_market_history
+    description: "Historical price and volume data"
+    columns:
+      - name: coin_id
+        description: "Foreign key to dim_coins"
+        tests:
+          - not_null
+          - relationships:
+              to: ref('dim_coins')
+              field: coin_id
+
+      - name: price_usd
+        description: "Current price in USD"
+        tests:
+          - not_null

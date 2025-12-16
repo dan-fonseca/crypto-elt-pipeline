@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.py[cod]
+venv/
+
+# Environment variables
+.env
+
+# dbt
+crypto_analytics/target/
+crypto_analytics/dbt_packages/
+crypto_analytics/logs/
+
+# Airflow
+logs/
+dags/data/*.csv 
+plugins/
+airflow-webserver.pid
+
+# IDE
+.vscode/

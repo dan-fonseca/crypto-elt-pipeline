@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: airflow_db  #logical name for the db
+    database: airflow
+    schema: public
+    tables:
+      - name: raw_crypto_data # Actual Table name stored in Postgres
