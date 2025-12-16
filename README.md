@@ -137,7 +137,7 @@ docker exec -it transit-pipeline-airflow-scheduler-1 bash -c "pip install dbt-po
 
 ---
 
-## 🔮 Future Improvements
+## Future Improvements
 * **Dashboarding:** Connect Metabase or Superset to Postgres to visualize the price trends.
 * **Incremental Loading:** Optimize the dbt models to process only new data (Incremental Strategy) rather than full refreshes.
 * **Cloud Migration:** Adapt the docker-compose setup to run on AWS ECS or Google Cloud Run.
