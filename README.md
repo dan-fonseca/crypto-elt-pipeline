@@ -132,7 +132,7 @@ To manually run the test suite inside the container:
 
 ```bash
 # This mimics the command Airflow runs automatically
-docker exec -it transit-pipeline-airflow-scheduler-1 bash -c "pip install dbt-postgres && cd /opt/airflow/dbt && dbt test --profiles-dir ."
+docker exec -it crypto-elt-pipeline-airflow-scheduler-1 bash -c "pip install dbt-postgres && cd /opt/airflow/dbt && dbt test --profiles-dir ."
 ```
 
 ---
