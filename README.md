@@ -119,7 +119,7 @@ docker-compose up -d
 Once the DAG tasks turn **Dark Green** (Success), you can query the Data Warehouse to see the modeled data:
 
 ```bash
-docker exec -it transit-pipeline-postgres-1 psql -U airflow -d airflow -c "SELECT * FROM public.fact_market_history LIMIT 5;"
+docker exec -it crypto-elt-pipeline-postgres-1 psql -U airflow -d airflow -c "SELECT * FROM public.fact_market_history LIMIT 5;"
 
 ```
 
